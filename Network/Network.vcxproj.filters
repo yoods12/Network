@@ -21,5 +21,11 @@
     <ClCompile Include="err_quit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="WinSock.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -46,4 +46,6 @@ void err_display(const char* mes)
 
 	//va_list* Arguments : 가변인수 목록
 	//아직 안배운듯?
+
+	//FormatMessage 성공하면 오류메시지 길이, 실패하면 0
 }
