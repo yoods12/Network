@@ -22,7 +22,7 @@ void err_display(const char* mes)
 	LocalFree(lpbuffer); //LocalAlloc 함수를 사용하여 할당한 메모리 해제
 
 	//FormatMessage 함수 : 오류 메시지를 문자열로 반환하는데 사용
-	
+
 	//DWORD dwFlags 옵션 : 형식화된 메세지를 어떻게 가져올지를 지정
 	//FORMAT_MESSAGE_ALLOCATE_BUFFER : FormatMessage 함수가 메시지를 저장할 메모리 버퍼를 동적으로 할당, 메모리 해제 해야함
 	//FORMAT_MESSAGE_FROM_SYSTEM : FormatMessage 함수가 시스템 오류코드에 대한 메시지를 가져옴, 시스템 오류 메시지 얻을 때 사용

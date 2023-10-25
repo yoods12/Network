@@ -20,11 +20,8 @@ int main()
 	SOCKET sock1 = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 
 	//int af : 주소체계 AF_INET(IPv4), AF_INET6(IPv6)를 사용
-	
 	//int type : 소켓타입 SOCK_STREAM(TCP 소켓), SOCK_DRAM(UDP 소켓)
-
 	//int protocol : 사용할 프로토콜 0을 사용하면 기본프로토콜 사용하도록 위임
-
 	//성공 : 새로운 소켓 , 실패 : INVALID_SOCKET 반환
 
 	if (sock1 == INVALID_SOCKET)
@@ -44,6 +41,10 @@ int main()
 	//각각 생성된 소켓 핸들값을 화면에 출력
 	cout << "tcp socket handle : " << sock1 << endl;
 	cout << "udp socket handle : " << sock2 << endl;
+
+	//소켓 닫기
+	closesocket(sock1); //tcp socket
+	closesocket(sock2); //udp socket
 
 	//윈속 종료
 	WSACleanup();

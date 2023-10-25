@@ -14,9 +14,7 @@ int main()
 	}
 
 	//WSAStartup : 성공하면 0 실패하면 오류코드
-
 	//WORD wVersionRequested : 사용하는 WinSock의 버전 지정 MAKEWORD(2,2)는 Winsock 2.2버전을 지정
-	
 	//LPWSADATA lpWSAData : 초기화된 Winsock 라이브러리의 상태 및 정보를 저장하기 위한 구조체(WSADATA)에 대한 포인터
 
 	//윈속 종료
