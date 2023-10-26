@@ -3,6 +3,7 @@
 #include <WS2tcpip.h>
 #include <process.h>
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
@@ -39,6 +40,8 @@ int main()
 		return -1;
 	}
 
+	setlocale(LC_ALL, ".utf8");
+
 	//UDP를 이용하여 데이터 수신
 	char buf[512]; //수신한 데이터 저장
 	SOCKADDR_IN saddr; //송신자의 주소정보
@@ -64,6 +67,9 @@ int main()
 		buf[retval] = '\0';
 		cout << buf;
 	}
+
+
+
 	closesocket(udpsock);
 	WSACleanup();
 
